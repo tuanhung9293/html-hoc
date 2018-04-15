@@ -1,4 +1,5 @@
 .test-bgr {
+  display: none;
   position: absolute;
   background-image: url(../images/home-page/home-01.jpg);
   opacity: 0.7;
@@ -6,6 +7,83 @@
   height: 12000px;
   background-size: contain;
   background-repeat: no-repeat;
-  display: none;
+}
+
+header {
+  box-shadow: 0px 5px 8px #888888;
+}
+
+header .head-logo {
+  line-height: 100px;
+}
+
+header .head-logo img {
+  width: 90%;
+}
+
+header .head-bar {
+  text-transform: uppercase;
+  font-size: 27px;
+}
+
+header .head-bar .link-elms {
+  display: flex;
+  text-align: center;
+  height: 100px;
+}
+
+header .head-bar .link-elms a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+header .head-bar .link-elms a:hover {
+  background: #aeaeae;
+  color: white;
+}
+
+header .head-bar .link-elms a.active {
+  background: #f25c2a;
+  color: white;
+}
+
+header .head-bar .link-elms a div {
+  line-height: 40px;
+  border-right: solid 1px;
+  margin-top: 30px;
+}
+
+header .head-bar .link-elms a:last-child div {
+  border: none;
+}
+
+footer {
+  background: #f25c2a;
+  color: white;
+  min-height: 235px;
+  box-shadow: 0px -5px 8px #888888;
+}
+
+footer .footer-content {
+  padding: 10px 5%;
+}
+
+footer .footer-content .title-ft {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+footer .footer-content .content-ft {
+  font-size: 18px;
+}
+
+footer .footer-content .content-ft li {
+  margin: 4px 0;
+}
+
+footer .footer-content .content-ft .no-deco {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

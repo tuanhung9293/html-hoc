@@ -8,75 +8,64 @@ $(document).ready(function () {
     });
     
     // banks slider
-    var carousel = $('#carousel');
-    $("#carousel .slide").clone().appendTo("#carousel");
-    
-    $('#next').click(function () { shiftSlide(-1) })
-    $('#prev').click(function () { shiftSlide(1) })
+    $("#bank-slide #carousel .slide").clone().appendTo("#bank-slide #carousel");
+    $('#bank-slide #next').click(function () { shiftSlide(-1, '#bank-slide #carousel') })
+    $('#bank-slide #prev').click(function () { shiftSlide(1, '#bank-slide #carousel') })
 
-    function shiftSlide(direction) {
+    // productions slider
+    $("#product-slide #carousel .slide").clone().appendTo("#product-slide #carousel");
+    $('#product-slide #next').click(function () { shiftSlide(-1, '#product-slide #carousel') })
+    $('#product-slide #prev').click(function () { shiftSlide(1, '#product-slide #carousel') })
+
+    function shiftSlide(direction, id) {
+        var carouselProd = $(`${id}`);
         if (direction === 1) {
-            var slideWidth = $('#carousel .slide:last').width();
+            var slideWidth = $(`${id} .slide:last`).width();
 
             $(document).off('mouseup')
-            carousel.off('mousemove')
+            carouselProd.off('mousemove')
                 .addClass('transition')
                 .css('transform', 'translateX(' + (slideWidth) + 'px)');
             setTimeout(function () {
-                $('.slide:first').before($('.slide:last'));
-                carousel.removeClass('transition')
-                carousel.css('transform', 'translateX(0px)');
+                $(`${id} .slide:first`).before($(`${id} .slide:last`));
+                carouselProd.removeClass('transition')
+                carouselProd.css('transform', 'translateX(0px)');
             }, 700)
 
         } else if (direction === -1) {
-            var slideWidth = $('#carousel .slide:first').width();
+            var slideWidth = $(`${id} .slide:first`).width();
 
             $(document).off('mouseup')
-            carousel.off('mousemove')
+            carouselProd.off('mousemove')
                 .addClass('transition')
                 .css('transform', 'translateX(' + (-slideWidth) + 'px)');
             setTimeout(function () {
-                $('.slide:last').after($('.slide:first'));
-                carousel.removeClass('transition')
-                carousel.css('transform', 'translateX(0px)');
-            }, 700)
+                $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                carouselProd.removeClass('transition')
+                carouselProd.css('transform', 'translateX(0px)');
+            }, 400)
         }
     }
 
-    // productions slider
-    var carouselProd = $('#carousel-prod');
-    $("#carousel-prod .slide-prod").clone().appendTo("#carousel-prod");
-    
-    $('#next-prod').click(function () { shiftSlideProd(-1) })
-    $('#prev-prod').click(function () { shiftSlideProd(1) })
-
-    function shiftSlideProd(direction) {
-        if (direction === 1) {
-            var slideWidth = $('#carousel-prod .slide-prod:last').width();
-
-            $(document).off('mouseup')
-            carouselProd.off('mousemove')
-                .addClass('transition')
-                .css('transform', 'translateX(' + (slideWidth) + 'px)');
-            setTimeout(function () {
-                $('.slide-prod:first').before($('.slide-prod:last'));
-                carouselProd.removeClass('transition')
-                carouselProd.css('transform', 'translateX(0px)');
-            }, 700)
-
-        } else if (direction === -1) {
-            var slideWidth = $('#carousel-prod .slide-prod:first').width();
+    autoRunSlide('#product-slide #carousel');
+    function autoRunSlide(id) {
+        var carouselProd = $(`${id}`);
+        setInterval(function () {
+            var slideWidth = $(`${id} .slide:first`).width() + $(`${id} .slide:nth-child(2)`).width() + $(`${id} .slide:nth-child(3)`).width();
 
             $(document).off('mouseup')
             carouselProd.off('mousemove')
                 .addClass('transition')
                 .css('transform', 'translateX(' + (-slideWidth) + 'px)');
             setTimeout(function () {
-                $('.slide-prod:last').after($('.slide-prod:first'));
+                $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                $(`${id} .slide:last`).before($(`${id} .slide:first`));
                 carouselProd.removeClass('transition')
                 carouselProd.css('transform', 'translateX(0px)');
-            }, 700)
-        }
+            }, 3400)
+        }, 3450);
+
     }
 
     // fixed bar

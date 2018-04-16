@@ -1,0 +1,263 @@
+#logo {
+	width: 76%;
+	margin-top: 12px;
+    margin-left: 102px;
+}
+
+.set-bgr{
+	position: absolute;
+    height: 6000px;
+    width: 1170px;
+    background: url(../images/bgr.jpg) no-repeat;
+    background-size: 1170px auto;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+}
+
+.p001 {
+	font-size: 25px;
+}
+.p001 li {
+	padding: 19px 0;
+}
+
+.p002 {
+ 	padding: 0 55px;
+}
+
+.p002 a {
+  color: #909295;
+}
+
+.border-page {
+  border-right: 1px solid;
+}
+
+#slide {
+  height: 414px;
+  width: 1170px;
+}
+
+#sologon {
+  margin-top: 34px;
+}
+
+ strong {
+  font-size: 27.5px;
+  color: #f15929;
+}
+
+#sologon div img {
+  width: 110px;
+  margin-top: 27px;
+}
+
+.container-1 {
+  margin-top: 36px;
+  padding-right: 15px;
+  padding-left: 30px;
+  width: 965px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#sanpham {
+  color: #f15929;
+  font-size: 19.5px;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.product {
+  float: left;
+  width: 230px;
+  margin-top: 9px;
+}
+
+.name-product {
+  background: #f15929;
+  width: 100%;
+}
+.name-product center {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 9px;
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.btn-xem {
+  float: right;
+  font-size: 9px;
+  margin: 15px 4px;
+}
+
+.card-body {
+  /* border: 1px solid; */
+  width: 218px;
+  height: 236px;
+  background-color: white;
+}
+
+.row-1 {
+  float: left;
+}
+
+.container-2 {
+  margin-top: 40px;
+  padding-right: 15px;
+  padding-left: 30px;
+  width: 965px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-2 {
+  top: 5px;
+}
+
+.product-done {
+  margin-top: 20px;
+  width: 617px;
+}
+
+.image-done {
+  width: 617px;
+}
+
+.name-product-1 {
+  font-size: 20px;
+  height: 65px;
+}
+
+.name-product-1 p {
+  margin-top: 16px;
+  margin-left: 64px;
+}
+
+.product-done >div{
+  /* border: 1px solid; */
+  margin-bottom: 27px;
+}
+.help {
+  position: absolute;
+  width: 233px;
+  height: 460px;
+  margin-right: 15px;
+  top: 0;
+  right: 0px;
+}
+
+.prod-1 {
+  position: relative;
+
+}
+
+.ho-tro {
+  background: #f15929;
+  height: 30px;
+}
+
+.ho-tro p {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  padding-top: 5px;
+}
+
+.help-1{
+  /* text-align: center; */
+  height: 270px;
+  border: 1px solid;
+}
+
+.hotline {
+  margin: 0px 10px;
+  border-bottom: 1px solid;
+  height: 20px;
+}
+
+.hotline p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.dich-vu {
+  margin-top: 42px;
+  height: 153px;
+  border: 1px solid;
+}
+
+.bao-gia {
+  margin-left: 10px;
+  border-bottom: 1px solid;
+  height: 27px;
+}
+
+.bao-gia p {
+  font-size: 11px;
+  padding-top: 4px;
+}
+
+#section {
+  background-color: #EEEEE0
+}
+
+.mySlides1 img {
+  width: 100px;
+}
+
+#fb {
+  margin-top:40px;
+}
+
+#thietke {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #f15929;
+  height: 200px;
+}
+
+.footer div {
+  color: white;
+  font-size: 23px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.footer div div {
+  margin-left:50px;
+  margin-bottom: 20px;
+}
+
+.footer-1 {
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.product-done > div {
+  background-color: white;
+}
+
+#icon-star1 {
+  color: #f15929;
+  right: 10px;
+}
+
+#icon-next1 {
+  color: #f15929;
+  right: 6px;
+}

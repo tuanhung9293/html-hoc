@@ -22,6 +22,7 @@ header {
     .head-bar {
         text-transform: uppercase;
         font-size: 27px;
+        min-width: 650px;
         .link-elms {
             display: flex;
             text-align: center;
@@ -78,19 +79,18 @@ footer {
 }
 
 .home-page {
-    opacity: 0;
-    opacity: 1;
-    margin-bottom: 5000px;
     .home-photo-part {
         width: 100%
     }
     .slogan-part {
         box-shadow: 0px 3px 8px #888888;
         position: relative;
+        padding-bottom: 50px;
+        padding-top: 20px;
         .slogan {
             text-transform: uppercase;
             color: $main-color;
-            font-size: 36px;
+            font-size: 30px;
             font-weight: bold;
             text-align: center;
             padding: 36px 0;
@@ -98,6 +98,12 @@ footer {
     }
     .special-prod-part {
         background: #f1f1f1;
+        .title {
+            text-transform: uppercase;
+            font-size: 26px;
+            color: #f25c2a;
+            padding-top: 18px;
+        }
         .prod-elms {
             margin: 15px auto;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -127,6 +133,112 @@ footer {
                     text-align: right;
                     font-size: 11px;
                 }
+            }
+        }  
+    }
+
+    .special-prod-part2 {
+        background: #f1f1f1;
+        position: relative;
+        padding-bottom: 60px;
+        .finish-prod {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 15px auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            div {
+                font-size: 23px;
+                padding: 20px 40px;
+                background: white;
+            }
+        }
+
+        #fix-table {
+            width: 23%;
+            right: 12.5%;
+            z-index: 4444;
+            .right-bar {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin: 15px auto;
+                .title {
+                    text-transform: uppercase;
+                    color: white;
+                    background: $main-color;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 8px 0;
+                }
+                .content {
+                    background: white;
+                    padding: 0 12px;
+                    div {
+                        padding-top: 12px;
+                        padding-right: 0;
+                        padding-left: 0;
+                        font-size: 15px;
+                        border-bottom: solid 1px;
+                        img {
+                            height: 10px;
+                            float: left;
+                            margin-top: 5px;
+                        }                        
+                    }
+                    &.top-block {
+                        text-align: center;
+                        min-height: 290px;
+                    }
+                    &.bottom-block {
+                        min-height: 145px;
+                        img {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .position-top {
+            position: absolute;
+            top: 0;
+        };
+        .position-mid {
+            position: fixed;
+            top: 0;
+        };
+        .position-bottom {
+            position: absolute;
+            bottom: 60px;
+        };
+    }
+
+    .bottom-part {
+        box-shadow: 0px -3px 8px #888888;
+        padding: 15px 3% 20px 11%;
+        .facebook-area {
+            img {
+                width: 100%;
+            }
+        }
+        .prod-slide-area {
+            padding-left: 70px;
+            .service {
+                text-transform: capitalize;
+                font-size: 16px;
+                text-align: center;
+                padding: 12px 0;
+                span {
+                    padding-right: 4px;
+                    border-right: solid 1px;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+            .slide-area {
+                padding: 30px 0;
             }
         }
     }
@@ -166,17 +278,70 @@ $carousel-height: 85px;
         position: absolute;
         left: -50px;
         top: 0;
-        font-size: 65px;
         height: $carousel-height;
-        color: gray;
+        img {
+            height: $carousel-height;
+        }
     }
     #next {
         cursor: pointer;
         position: absolute;
         right: -50px;
         top: 0;
-        font-size: 65px;
         height: $carousel-height;
-        color: gray;
+        img {
+            height: $carousel-height;
+        }
+    }
+}
+
+$carousel-height-prod: 65px;
+.slide-wrap-prod {
+    position: relative;
+    width: 95%;
+    height: $carousel-height-prod;
+    margin: 0 auto;
+    .window-prod {
+        overflow: hidden;
+        position: relative;
+        background: #222;
+        #carousel-prod {
+            width: 10000px;
+            position: relative;
+            top: 0;
+            left: -450px;
+        }
+        .slide-prod {
+            img {
+                height: $carousel-height-prod;
+            }
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .transition {
+            transition: .7s;
+        }
+    }
+    #prev-prod {
+        cursor: pointer;
+        position: absolute;
+        left: -50px;
+        top: 0;
+        height: $carousel-height-prod;
+        img {
+            height: $carousel-height-prod;
+        }
+    }
+    #next-prod {
+        cursor: pointer;
+        position: absolute;
+        right: -50px;
+        top: 0;
+        height: $carousel-height-prod;
+        img {
+            height: $carousel-height-prod;
+        }
     }
 }

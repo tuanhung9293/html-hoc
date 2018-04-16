@@ -1,0 +1,26 @@
+.baohanh {
+  margin-top: 20px;
+  color: #f15929;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.dichvu {
+  font-weight: 600;
+}
+
+#hr {
+  height: 1px;
+  border: 0.5px solid;
+  width: 960px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.table {
+  margin-left: 50px;
+}
+
+#table-baohanh {
+  background-color: #eee;
+}

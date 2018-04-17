@@ -48,7 +48,7 @@ header .head-bar .link-elms a p {
   display: block;
 }
 
-header .head-bar .link-elms a:last-child div {
+header .head-bar .link-elms a:last-child p {
   border: none;
 }
 
@@ -459,8 +459,8 @@ footer .footer-content .content-ft .no-deco {
 /*# sourceMappingURL=gioithieu.css.map */
 .products-page {
   background-color: #eee;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .products-page .left-bar-part .left-bar {
@@ -506,6 +506,75 @@ footer .footer-content .content-ft .no-deco {
   background-image: url(../images/icon/list-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.products-page .right-part .photo-slider {
+  border-bottom: #f25c2a solid 1.5px;
+  padding-bottom: 30px;
+}
+
+.products-page .right-part .prod-galaxy .title-block {
+  font-size: 18px;
+  color: #f25c2a;
+  padding: 25px 0 8px 0;
+}
+
+.products-page .right-part .prod-galaxy .title-block span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.products-page .right-part .prod-galaxy .change-padding-margin {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.products-page .right-part .prod-galaxy .change-padding-margin .col-4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.products-page .right-part .prod-galaxy .prod-elms {
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.products-page .right-part .prod-galaxy .prod-elms .photo-area {
+  position: relative;
+}
+
+.products-page .right-part .prod-galaxy .prod-elms .photo-area img {
+  width: 100%;
+  height: 180px;
+}
+
+.products-page .right-part .prod-galaxy .prod-elms .photo-area .name-prod {
+  text-transform: uppercase;
+  text-align: center;
+  color: #f25c2a;
+  font-size: 15px;
+  padding: 2px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(59, 55, 55, 0.67);
+}
+
+.products-page .right-part .prod-galaxy .prod-elms .text-area {
+  background: white;
+  padding: 5px;
+  height: 100px;
+}
+
+.products-page .right-part .prod-galaxy .prod-elms .text-area .desc-prod {
+  height: 82%;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.products-page .right-part .prod-galaxy .prod-elms .text-area .xem-them {
+  text-align: right;
+  font-size: 11px;
 }
 
 #thongtin {

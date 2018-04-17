@@ -108,6 +108,17 @@ function productsPage() {
     });
     $('.carousel-inner').css('height', `${shortest}px`);
 
+    $(window).resize(function() {
+        shortest = 1000;
+        $(".carousel-inner .carousel-item").each(function () {
+            $this = $(this);
+            if ($this.outerHeight() < shortest) {
+                shortest = $this.outerHeight();
+            }
+        });
+        $('.carousel-inner').css('height', `${shortest}px`);
+    });
+
     // set slider auto run of products page
     $('.carousel').carousel({
         interval: 3000

@@ -39,10 +39,13 @@ header .head-bar .link-elms a.active {
   color: white;
 }
 
-header .head-bar .link-elms a div {
+header .head-bar .link-elms a p {
   line-height: 40px;
   border-right: solid 1px;
   margin-top: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: block;
 }
 
 header .head-bar .link-elms a:last-child div {

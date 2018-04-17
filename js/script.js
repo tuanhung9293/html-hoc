@@ -1,21 +1,30 @@
-$(document).ready(function () {
-
+function initPage() {
     // top bar
     var selector = '.link-elms a';
     $(selector).on('click', function () {
         $(selector).removeClass('active');
         $(this).addClass('active');
     });
-    
+}
+
+function homePage() {
     // banks slider
     $("#bank-slide #carousel .slide").clone().appendTo("#bank-slide #carousel");
-    $('#bank-slide #next').click(function () { shiftSlide(-1, '#bank-slide #carousel') })
-    $('#bank-slide #prev').click(function () { shiftSlide(1, '#bank-slide #carousel') })
+    $('#bank-slide #next').click(function () {
+        shiftSlide(-1, '#bank-slide #carousel')
+    })
+    $('#bank-slide #prev').click(function () {
+        shiftSlide(1, '#bank-slide #carousel')
+    })
 
     // productions slider
     $("#product-slide #carousel .slide").clone().appendTo("#product-slide #carousel");
-    $('#product-slide #next').click(function () { shiftSlide(-1, '#product-slide #carousel') })
-    $('#product-slide #prev').click(function () { shiftSlide(1, '#product-slide #carousel') })
+    $('#product-slide #next').click(function () {
+        shiftSlide(-1, '#product-slide #carousel')
+    })
+    $('#product-slide #prev').click(function () {
+        shiftSlide(1, '#product-slide #carousel')
+    })
 
     function shiftSlide(direction, id) {
         var carouselProd = $(`${id}`);
@@ -65,7 +74,6 @@ $(document).ready(function () {
                 carouselProd.css('transform', 'translateX(0px)');
             }, 3400)
         }, 3450);
-
     }
 
     // fixed bar
@@ -73,10 +81,10 @@ $(document).ready(function () {
     var elmBottom = $('#end-production').offset().top - $(window).height() - $('#fix-table').height();
 
     function fixTable() {
-        if ($(this).scrollTop()<elmTop) {
+        if ($(this).scrollTop() < elmTop) {
             $('#fix-table').removeClass().addClass('position-top');
             return;
-        } else if (($(this).scrollTop()>=elmTop) && ($(this).scrollTop()<elmBottom)) {
+        } else if (($(this).scrollTop() >= elmTop) && ($(this).scrollTop() < elmBottom)) {
             $('#fix-table').removeClass().addClass('position-mid');
             return;
         } else {
@@ -86,6 +94,21 @@ $(document).ready(function () {
 
     fixTable();
     $(document).on('scroll', fixTable);
-   
-    
-});
+}
+
+function productsPage() {
+    // set slider height of products page
+    var shortest = 1000;
+    $(".carousel-inner .item").each(function () {
+        $this = $(this);
+        if ($this.outerHeight() < shortest) {
+            shortest = $this.outerHeight();
+        }
+    });
+    $('.carousel-inner').css('height', `${shortest}px`);
+
+    // set slider auto run of products page
+    $('.carousel').carousel({
+        interval: 3000
+    })
+}

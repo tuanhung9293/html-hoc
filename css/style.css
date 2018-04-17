@@ -61,7 +61,7 @@ footer .footer-content {
 }
 
 footer .footer-content .title-ft {
-  font-size: 28px;
+  font-size: 21px;
   font-weight: bold;
   padding: 5px 0;
 }
@@ -433,4 +433,113 @@ footer .footer-content .content-ft .no-deco {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 /*# sourceMappingURL=style.css.map */
+
+/* //css cui cua hoc */
+
+.lienhe {
+  height: 120px;
+  background-color: white;
+}
+
+.lienhe-1 {
+  text-align: center;
+  font-size: 35px;
+  color: #f15929;
+  margin-top: 40px;
+}
+
+#btn-lienhe {
+  background-color: #f15929;
+  color: white;
+  font-size: 20px;
+  margin-top: 45px;
+  -webkit-animation: tada 1.2s infinite;
+  /* Safari 4+ */
+  -moz-animation: tada 1.2s infinite;
+  /* Fx 5+ */
+  -o-animation: tada 1.2s infinite;
+  /* Opera 12+ */
+  animation: tada 1.2s infinite;
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+/* Standard syntax */
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}

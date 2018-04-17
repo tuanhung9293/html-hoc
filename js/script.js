@@ -1,11 +1,11 @@
-function initPage() {
-    // top bar
-    var selector = '.link-elms a';
-    $(selector).on('click', function () {
-        $(selector).removeClass('active');
-        $(this).addClass('active');
-    });
-}
+// function initPage() {
+//     // top bar
+//     var selector = '.link-elms a';
+//     $(selector).on('click', function () {
+//         $(selector).removeClass('active');
+//         $(this).addClass('active');
+//     });
+// }
 
 function homePage() {
     // banks slider
@@ -95,6 +95,7 @@ function homePage() {
     fixTable();
     $(document).on('scroll', fixTable);
 }
+
 
 function productsPage() {
     // set slider height of products page

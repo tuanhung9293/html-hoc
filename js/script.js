@@ -100,7 +100,7 @@ function homePage() {
 function productsPage() {
     // set slider height of products page
     var shortest = 1000;
-    $(".carousel-inner .item").each(function () {
+    $(".carousel-inner .carousel-item").each(function () {
         $this = $(this);
         if ($this.outerHeight() < shortest) {
             shortest = $this.outerHeight();

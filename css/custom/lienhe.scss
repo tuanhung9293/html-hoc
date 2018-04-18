@@ -1,6 +1,89 @@
 #lienhe1 {
-    height: 80px;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 17px;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 17px;
+}
+
+#lienhe-2 {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+}
+
+.lienhe-hl {
+  background-color: white;
+  text-align: center;
+  height: 200px;
+}
+
+.lienhe-hl-1 {
+  background-color: #f15929;
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+.lienhe-hl-2 {
+  border-bottom: 1px solid;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.lienhe1-hl {
+  background-color: white;
+  height: 300px;
+}
+
+.lienhe1-hl-1 {
+  background: linear-gradient(#f15929, #f15929);
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.lienhe1-hl-2 {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.lienhe1-hl-3 {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.lienhe1-hl-3 span {
+  color: #f15929;
+}
+
+.tuvan-thietke{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+.thongdiep {
+  min-height: 200px;
+}
+
+#inp-thongdiep{
+  background-color: white;
+}
+
+.phanhoi {
+  font-size: 25px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#gui {
+    background-color: #f15929;
 }

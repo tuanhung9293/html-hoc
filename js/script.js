@@ -125,7 +125,7 @@ function homePage() {
             return;
         };
         if (($(this).scrollTop() > elmBottom)) {
-            $('#fix-table').removeClass().addClass('position-bottom');
+            $('#fix-table').removeClass().addClass('position-mid');
         }
     }
 

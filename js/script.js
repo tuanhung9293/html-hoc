@@ -114,16 +114,16 @@ function homePage() {
     var elmTop = $('#start-production').offset().top;
     var elmBottom = $('#end-production').offset().top;
     // var elmBottom = $('#end-production').offset().top - $(window).height() - $('#fix-table').height();
-    console.log(elmTop);
-    console.log(elmBottom);
-    console.log($(this).scrollTop());
+
     function fixTable() {
         if ($(this).scrollTop() < elmTop) {
             $('#fix-table').removeClass().addClass('position-top');
             return;
-        if (($(this).scrollTop() >= elmTop) && ($(this).scrollTop() <= elmBottom)) {
+        };
+        if (($(this).scrollTop() >= elmTop) && ($(this).scrollTop() < elmBottom)) {
             $('#fix-table').removeClass().addClass('position-mid');
             return;
+        };
         if (($(this).scrollTop() > elmBottom)) {
             $('#fix-table').removeClass().addClass('position-bottom');
         }

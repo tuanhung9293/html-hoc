@@ -143,7 +143,7 @@ function productsPage() {
      function carousel() {
          var i;
          var dots = document.getElementsByClassName("demo");
-         var x = document.getElementsByClassName("mySlides");
+         var x = document.getElementsByClassName("mySlides1");
          for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";
          }

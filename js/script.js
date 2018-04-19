@@ -120,10 +120,10 @@ function homePage() {
             $('#fix-table').removeClass().addClass('position-top');
             return;
         } else if (($(this).scrollTop() >= elmTop) && ($(this).scrollTop() < elmBottom)) {
-            $('#fix-table').removeClass().addClass('position-top');
+            $('#fix-table').removeClass().addClass('position-mid');
             return;
         } else {
-            $('#fix-table').removeClass().addClass('position-top');
+            $('#fix-table').removeClass().addClass('position-bottom');
         }
     }
 

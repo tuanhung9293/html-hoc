@@ -116,7 +116,7 @@ function homePage() {
     // var elmBottom = $('#end-production').offset().top - $(window).height() - $('#fix-table').height();
 
     function fixTable() {
-        if ($(this).scrollTop() < elmTop) {
+        if ($(this).scrollTop() < elmTop ) {
             $('#fix-table').removeClass().addClass('position-top');
             return;
         };
@@ -124,8 +124,8 @@ function homePage() {
             $('#fix-table').removeClass().addClass('position-mid');
             return;
         };
-        if (($(this).scrollTop() > elmBottom)) {
-            $('#fix-table').removeClass().addClass('position-mid');
+        if (($(this).scrollTop() > elmBottom-500)) {
+            $('#fix-table').removeClass().addClass('position-top');
         }
     }
 

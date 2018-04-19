@@ -12,6 +12,7 @@ $main-color: #f25c2a;
 }
 
 .lienhe-hl {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   background-color: white;
   text-align: center;
   height: 200px;
@@ -35,6 +36,7 @@ $main-color: #f25c2a;
 }
 
 .lienhe1-hl {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   background-color: white;
   height: 300px;
 }
@@ -63,7 +65,7 @@ $main-color: #f25c2a;
   color: $main-color;
 }
 
-.tuvan-thietke{
+.tuvan-thietke {
   text-align: center;
   font-size: 20px;
   padding-top: 20px;
@@ -75,7 +77,8 @@ $main-color: #f25c2a;
   min-height: 200px;
 }
 
-#inp-thongdiep{
+#inp-thongdiep {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   background-color: white;
 }
 
@@ -87,7 +90,7 @@ $main-color: #f25c2a;
 }
 
 #gui {
-    background-color: $main-color;
+  background-color: $main-color;
 }
 
 #ft-lienhe {
@@ -96,96 +99,93 @@ $main-color: #f25c2a;
   margin: 30px;
 }
 
-#btn-lienhe{
+#btn-lienhe {
   background-color: $main-color;
- -webkit-animation: tada 1.2s infinite;
- /* Safari 4+ */
+  -webkit-animation: tada 1.2s infinite;
+  /* Safari 4+ */
+  -moz-animation: tada 1.2s infinite;
+  /* Fx 5+ */
+  -o-animation: tada 1.2s infinite;
+  /* Opera 12+ */
+  animation: tada 1.2s infinite;
+}
 
- -moz-animation : tada 1.2s infinite;
- /* Fx 5+ */
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 
- -o-animation : tada 1.2s infinite;
- /* Opera 12+ */
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 
- animation : tada 1.2s infinite;
- }
+/* Safari 4.0 - 8.0 */
 
- @-webkit-keyframes tada {
-   from {
-     -webkit-transform: scale3d(1, 1, 1);
-     transform: scale3d(1, 1, 1);
-   }
-   10%,
-   20% {
-     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-   }
-   30%,
-   50%,
-   70%,
-   90% {
-     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-   }
-   40%,
-   60%,
-   80% {
-     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-   }
-   to {
-     -webkit-transform: scale3d(1, 1, 1);
-     transform: scale3d(1, 1, 1);
-   }
- }
+@-webkit-keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
 
- @keyframes tada {
-   from {
-     -webkit-transform: scale3d(1, 1, 1);
-     transform: scale3d(1, 1, 1);
-   }
-   10%,
-   20% {
-     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-   }
-   30%,
-   50%,
-   70%,
-   90% {
-     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-   }
-   40%,
-   60%,
-   80% {
-     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-   }
-   to {
-     -webkit-transform: scale3d(1, 1, 1);
-     transform: scale3d(1, 1, 1);
-   }
- }
+/* Standard syntax */
 
- /* Safari 4.0 - 8.0 */
-
- @-webkit-keyframes example {
-   from {
-     background-color: red;
-   }
-   to {
-     background-color: yellow;
-   }
- }
-
- /* Standard syntax */
-
- @keyframes example {
-   from {
-     background-color: red;
-   }
-   to {
-     background-color: yellow;
-   }
- }
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}

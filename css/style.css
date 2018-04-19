@@ -4,7 +4,7 @@ header {
 }
 
 header .head-logo {
-  line-height: 100px;
+  line-height: 80px;
 }
 
 header .head-logo img {
@@ -20,7 +20,7 @@ header .head-bar {
 header .head-bar .link-elms {
   display: flex;
   text-align: center;
-  height: 100px;
+  height: 80px;
 }
 
 header .head-bar .link-elms a {
@@ -40,7 +40,7 @@ header .head-bar .link-elms a.active {
 }
 
 header .head-bar .link-elms a p {
-  line-height: 40px;
+  line-height: 25px;
   border-right: solid 1px;
   margin-top: 30px;
   margin-left: -15px;
@@ -594,6 +594,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .lienhe-hl {
+  box-shadow: 0px 0px 10px black;
   background-color: white;
   text-align: center;
   height: 200px;
@@ -616,6 +617,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .lienhe1-hl {
+  box-shadow: 0px 0px 10px black;
   background-color: white;
   height: 300px;
 }
@@ -657,6 +659,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 #inp-thongdiep {
+  box-shadow: 0px 0px 10px black;
   background-color: white;
 }
 

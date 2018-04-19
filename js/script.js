@@ -120,7 +120,7 @@ function homePage() {
             $('#fix-table').removeClass().addClass('position-top');
             return;
         };
-        if (($(this).scrollTop() >= elmTop) && ($(this).scrollTop() < elmBottom)) {
+        if (($(this).scrollTop() >= elmTop) && ($(this).scrollTop() < 6200)) {
             $('#fix-table').removeClass().addClass('position-mid');
             return;
         };

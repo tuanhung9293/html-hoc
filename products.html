@@ -10,6 +10,24 @@
     <script src="js/lib/fontawesome-all.js"></script>
     <script src="js/lib/jquery-3.3.1.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none
+        }
+    
+        .w3-left,
+        .w3-right,
+        .w3-badge {
+            cursor: pointer
+        }
+    
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
+    </style>
 
     <!-- import custom file -->
     <link rel="stylesheet" href="css/style.css">
@@ -105,45 +123,16 @@
                 </div>
                 <div class="col-9 right-part">
                     <div class="photo-slider">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
-                                <li data-target="#myCarousel" data-slide-to="4"></li>
-                                <li data-target="#myCarousel" data-slide-to="5"></li>
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/home-page/projects/y-duoc.jpg" style="width:100%;">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/home-page/projects/benh-vien.jpg" style="width:100%;">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/home-page/projects/cuahang.jpg" style="width:100%;">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/home-page/projects/mika.jpg" style="width:100%;">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/home-page/projects/san-bay.jpg" style="width:100%;">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/home-page/projects/tra-sua.jpg" style="width:100%;">
-                                </div>
-                            </div>
+                        <div class="w3-content w3-display-container" style="max-width:800px">
+                            <img class="mySlides" src="images/home-page/projects/benh-vien.jpg" style="width:100%">
+                            <img class="mySlides" src="images/home-page/projects/san-bay.jpg" style="width:100%">
+                            <img class="mySlides" src="images/home-page/projects/benh-vien.jpg" style="width:100%">
+                            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
                         
-                            <!-- Left and right controls -->
-                            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white"></span>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white"></span>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white"></span>
+                            </div>
                         </div>
                     </div>
 

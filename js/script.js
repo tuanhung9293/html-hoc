@@ -133,29 +133,29 @@ function homePage() {
 
 
 function productsPage() {
-    // set slider height of products page
-    var shortest = 1000;
-    $(".carousel-inner .carousel-item").each(function () {
-        $this = $(this);
-        if ($this.outerHeight() < shortest) {
-            shortest = $this.outerHeight();
-        }
-    });
-    $('.carousel-inner').css('height', `${shortest}px`);
+     var myIndex = 0;
+     carousel();
 
-    $(window).resize(function() {
-        shortest = 1000;
-        $(".carousel-inner .carousel-item").each(function () {
-            $this = $(this);
-            if ($this.outerHeight() < shortest) {
-                shortest = $this.outerHeight();
-            }
-        });
-        $('.carousel-inner').css('height', `${shortest}px`);
-    });
+     function currentDiv(n) {
+         showDivs(myIndex = n);
+     }
 
-    // set slider auto run of products page
-    $('.carousel').carousel({
-        interval: 3000
-    })
+     function carousel() {
+         var i;
+         var dots = document.getElementsByClassName("demo");
+         var x = document.getElementsByClassName("mySlides");
+         for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+         }
+         myIndex++;
+         if (myIndex > x.length) {
+             myIndex = 1
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+         }
+         x[myIndex - 1].style.display = "block";
+         dots[myIndex - 1].className += " w3-white";
+         setTimeout(carousel, 3000); // Change image every 2 seconds
+     }
 }

@@ -116,15 +116,15 @@ function homePage() {
     // var elmBottom = $('#end-production').offset().top - $(window).height() - $('#fix-table').height();
 
     function fixTable() {
-        if ($(this).scrollTop() < elmTop ) {
+        if ($(this).scrollTop() < 1900 ) {
             $('#fix-table').removeClass().addClass('position-top');
             return;
         };
-        if (($(this).scrollTop() >= elmTop) && ($(this).scrollTop() < 6200)) {
+        if (($(this).scrollTop() >= 1900) && ($(this).scrollTop() < 6200)) {
             $('#fix-table').removeClass().addClass('position-mid');
             return;
         };
-        if (($(this).scrollTop() > elmBottom-500)) {
+        if (($(this).scrollTop() > 6200)) {
             $('#fix-table').removeClass().addClass('position-top');
         }
     }

@@ -123,7 +123,7 @@ function homePage() {
             $('#fix-table').removeClass().addClass('position-top');
             return;
         } else {
-            $('#fix-table').removeClass().addClass('position-bottom');
+            $('#fix-table').removeClass().addClass('position-top');
         }
     }
 

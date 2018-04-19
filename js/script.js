@@ -152,10 +152,10 @@ function productsPage() {
              myIndex = 1
          }
          for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" w3-white", "");
+             dots[i].className = dots[i].className.replace(" w3-deep-orange", "");
          }
          x[myIndex - 1].style.display = "block";
-         dots[myIndex - 1].className += " w3-white";
+         dots[myIndex - 1].className += " w3-deep-orange";
          setTimeout(carousel, 3000); // Change image every 2 seconds
      }
 }

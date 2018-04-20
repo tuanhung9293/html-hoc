@@ -10,6 +10,7 @@ $main-color: #f25c2a;
             padding-bottom: 10px;
             margin-bottom: 20px;
             .bar-name {
+                font-family: 'utmavo';
                 text-transform: uppercase;
                 text-align: center;
                 background-color: $main-color;
@@ -19,6 +20,7 @@ $main-color: #f25c2a;
                 padding: 5px 0;
             }
             .title-text {
+                font-family: 'utmavo';
                 border-bottom: solid 1px black;
                 margin: auto 10px;
                 padding-top: 8px;
@@ -29,6 +31,7 @@ $main-color: #f25c2a;
                 color: $main-color;
             }
             .normal-text {
+                font-family: Myriad Pro;
                 border-bottom: solid 1px black;
                 margin: auto 10px;
                 padding-top: 8px;
@@ -52,6 +55,7 @@ $main-color: #f25c2a;
         }
         .prod-galaxy {
             .title-block {
+                font-family: 'utmavo';
                 font-size: 18px;
                 color: $main-color;
                 padding: 25px 0 8px 0;
@@ -78,6 +82,7 @@ $main-color: #f25c2a;
                         height: 180px;
                     }
                     .name-prod {
+                        font-family: 'utmavo';
                         text-transform: uppercase;
                         text-align: center;
                         color: $main-color;
@@ -94,6 +99,7 @@ $main-color: #f25c2a;
                     padding: 5px;
                     height: 100px;
                     .desc-prod {
+                        font-family: Myriad Pro;
                         height: 82%;
                         overflow: hidden;
                         font-size: 13px;

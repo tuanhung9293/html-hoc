@@ -9,6 +9,7 @@ $main-color: #f25c2a;
         padding-bottom: 50px;
         padding-top: 20px;
         .slogan {
+            font-family: 'utmavo';
             text-transform: uppercase;
             color: $main-color;
             font-size: 30px;
@@ -20,6 +21,7 @@ $main-color: #f25c2a;
     .special-prod-part {
         background: #f1f1f1;
         .title {
+            font-family: 'utmavo';
             text-transform: uppercase;
             font-size: 26px;
             color: #f25c2a;
@@ -33,6 +35,7 @@ $main-color: #f25c2a;
                 height: 170px;
             }
             .name-prod {
+                font-family: 'utmavo';
                 text-transform: uppercase;
                 text-align: center;
                 background: $main-color;
@@ -63,6 +66,7 @@ $main-color: #f25c2a;
         position: relative;
         padding-bottom: 60px;
         .finish-prod {
+            font-family: Myriad Pro;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             margin: 15px auto;
             img {
@@ -84,6 +88,7 @@ $main-color: #f25c2a;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 margin: 15px auto;
                 .title {
+                    font-family: 'utmavo';
                     text-transform: uppercase;
                     color: white;
                     background: $main-color;
@@ -108,10 +113,12 @@ $main-color: #f25c2a;
                         }                        
                     }
                     &.top-block {
+                        font-family: Myriad Pro;
                         text-align: center;
                         min-height: 250px;
                     }
                     &.bottom-block {
+                        font-family: 'utmavo';
                         min-height: 145px;
                         img {
                             margin-right: 15px;
@@ -144,6 +151,7 @@ $main-color: #f25c2a;
         .prod-slide-area {
             padding-left: 70px;
             .service {
+                font-family: 'utmavo';
                 text-transform: capitalize;
                 font-size: 16px;
                 text-align: center;

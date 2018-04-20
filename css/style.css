@@ -18,6 +18,7 @@ header .head-bar {
 }
 
 header .head-bar .link-elms {
+  font-family: 'utmavo';
   display: flex;
   text-align: center;
   height: 80px;
@@ -60,6 +61,7 @@ footer {
 }
 
 footer .footer-content {
+  font-family: Myriad Pro;
   padding: 10px 5%;
 }
 
@@ -211,6 +213,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .home-page .slogan-part .slogan {
+  font-family: 'utmavo';
   text-transform: uppercase;
   color: #f25c2a;
   font-size: 30px;
@@ -224,6 +227,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .home-page .special-prod-part .title {
+  font-family: 'utmavo';
   text-transform: uppercase;
   font-size: 26px;
   color: #f25c2a;
@@ -241,6 +245,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .home-page .special-prod-part .prod-elms .name-prod {
+  font-family: 'utmavo';
   text-transform: uppercase;
   text-align: center;
   background: #f25c2a;
@@ -274,6 +279,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .home-page .special-prod-part2 .finish-prod {
+  font-family: Myriad Pro;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 15px auto;
 }
@@ -301,6 +307,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .home-page .special-prod-part2 #fix-table .right-bar .title {
+  font-family: 'utmavo';
   text-transform: uppercase;
   color: white;
   background: #f25c2a;
@@ -330,11 +337,13 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .home-page .special-prod-part2 #fix-table .right-bar .content.top-block {
+  font-family: Myriad Pro;
   text-align: center;
   min-height: 250px;
 }
 
 .home-page .special-prod-part2 #fix-table .right-bar .content.bottom-block {
+  font-family: 'utmavo';
   min-height: 145px;
 }
 
@@ -367,6 +376,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .home-page .bottom-part .prod-slide-area .service {
+  font-family: 'utmavo';
   text-transform: capitalize;
   font-size: 16px;
   text-align: center;
@@ -471,6 +481,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .products-page .left-bar-part .left-bar .bar-name {
+  font-family: 'utmavo';
   text-transform: uppercase;
   text-align: center;
   background-color: #f25c2a;
@@ -481,6 +492,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .products-page .left-bar-part .left-bar .title-text {
+  font-family: 'utmavo';
   border-bottom: solid 1px black;
   margin: auto 10px;
   padding-top: 8px;
@@ -492,6 +504,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .products-page .left-bar-part .left-bar .normal-text {
+  font-family: Myriad Pro;
   border-bottom: solid 1px black;
   margin: auto 10px;
   padding-top: 8px;
@@ -514,6 +527,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .products-page .right-part .prod-galaxy .title-block {
+  font-family: 'utmavo';
   font-size: 18px;
   color: #f25c2a;
   padding: 25px 0 8px 0;
@@ -549,6 +563,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .products-page .right-part .prod-galaxy .prod-elms .photo-area .name-prod {
+  font-family: 'utmavo';
   text-transform: uppercase;
   text-align: center;
   color: #f25c2a;
@@ -567,6 +582,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .products-page .right-part .prod-galaxy .prod-elms .text-area .desc-prod {
+  font-family: Myriad Pro;
   height: 82%;
   overflow: hidden;
   font-size: 13px;
@@ -582,6 +598,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 #lienhe1 {
+  font-family: Myriad Pro;
   height: 80px;
   text-align: center;
   padding-top: 20px;
@@ -602,6 +619,7 @@ footer .footer-content .content-ft .no-deco {
 
 .lienhe-hl-1 {
   background-color: #f25c2a;
+  font-family: 'utmavo';
   color: white;
   font-size: 20px;
   padding-top: 10px;
@@ -610,6 +628,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .lienhe-hl-2 {
+  font-family: Myriad Pro;
   border-bottom: 1px solid;
   margin-left: 30px;
   margin-right: 30px;
@@ -623,6 +642,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .lienhe1-hl-1 {
+  font-family: 'utmavo';
   background: linear-gradient(#f25c2a, #f15929);
   color: white;
   font-size: 20px;
@@ -633,11 +653,13 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .lienhe1-hl-2 {
+  font-family: Myriad Pro;
   font-size: 18px;
   margin-left: 20px;
 }
 
 .lienhe1-hl-3 {
+  font-family: Myriad Pro;
   font-size: 16px;
   margin-left: 20px;
 }
@@ -647,6 +669,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .tuvan-thietke {
+  font-family: 'utmavo';
   text-align: center;
   font-size: 20px;
   padding-top: 20px;
@@ -675,6 +698,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 #ft-lienhe {
+  font-family: 'utmavo';
   text-align: center;
   font-size: 30px;
   margin: 30px;
@@ -789,6 +813,7 @@ footer .footer-content .content-ft .no-deco {
 }
 
 .table {
+  font-family: 'utmavo';
   margin-left: 50px;
 }
 

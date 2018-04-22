@@ -3,7 +3,7 @@ css/custom/*.css
 css/custom/*.css.map
 
 # dependencies
-/node_modules
+/react-app/node_modules
 
 # testing
 /coverage

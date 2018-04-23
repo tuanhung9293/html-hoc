@@ -58,9 +58,8 @@ $main-color: #f25c2a;
                     font-size: 11px;
                 }
             }
-        }  
+        }
     }
-
     .special-prod-part2 {
         background: #f1f1f1;
         position: relative;
@@ -79,11 +78,7 @@ $main-color: #f25c2a;
                 background: white;
             }
         }
-
         #fix-table {
-            width: 23%;
-            right: 12.5%;
-            z-index: 4444;
             .right-bar {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 margin: 15px auto;
@@ -110,7 +105,7 @@ $main-color: #f25c2a;
                             height: 10px;
                             float: left;
                             margin-top: 5px;
-                        }                        
+                        }
                     }
                     &.top-block {
                         font-family: Myriad Pro;
@@ -127,27 +122,11 @@ $main-color: #f25c2a;
                 }
             }
         }
-
-        .position-top {
-            position: absolute;
-            top: 0;
-        };
-        .position-mid {
-            position: fixed;
-            top: 0;
-        };
-        .position-bottom {
-            position: absolute;
-            bottom: 60px;
-        };
     }
-
     .bottom-part {
         box-shadow: 0px -3px 8px #888888;
         padding: 15px 3% 20px 11%;
-        .facebook-area {
- 
-        }
+        .facebook-area {}
         .prod-slide-area {
             padding-left: 70px;
             .service {
@@ -168,5 +147,45 @@ $main-color: #f25c2a;
                 padding: 30px 0;
             }
         }
+    }
+}
+
+.position-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.position-mid {
+    position: fixed;
+    top: 0;
+    left: 50%;
+};
+
+@media only screen and (min-width: 576px) {
+    .position-mid, .position-top {
+        max-width: 210px;
+        transform: translateX(135px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .position-mid, .position-top {
+        max-width: 210px;
+        transform: translateX(135px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .position-mid, .position-top {
+        max-width: 290px;
+        transform: translateX(175px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .position-mid, .position-top {
+        max-width: 350px;
+        transform: translateX(205px);
     }
 }

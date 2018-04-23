@@ -135,29 +135,29 @@ function homePage() {
 
 
 function productsPage() {
-     var myIndex = 0;
-     carousel();
+    var myIndex = 0;
+    carousel();
 
-     function currentDiv(n) {
-         showDivs(myIndex = n);
-     }
+    function currentDiv(n) {
+        showDivs(myIndex = n);
+    }
 
-     function carousel() {
-         var i;
-         var dots = document.getElementsByClassName("demo");
-         var x = document.getElementsByClassName("mySlides1");
-         for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";
-         }
-         myIndex++;
-         if (myIndex > x.length) {
-             myIndex = 1
-         }
-         for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" w3-deep-orange", "");
-         }
-         x[myIndex - 1].style.display = "block";
-         dots[myIndex - 1].className += " w3-deep-orange";
-         setTimeout(carousel, 3000); // Change image every 2 seconds
-     }
+    function carousel() {
+        var i;
+        var dots = document.getElementsByClassName("demo");
+        var x = document.getElementsByClassName("mySlides1");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-deep-orange", "");
+        }
+        x[myIndex - 1].style.display = "block";
+        dots[myIndex - 1].className += " w3-deep-orange";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
 }

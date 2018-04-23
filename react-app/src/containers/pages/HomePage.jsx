@@ -20,7 +20,7 @@ class HomePage extends Component {
         return (
             <MasterLayout active='home'>
                 <section className="home-page">
-                    <img className="home-photo-part" src={images['home-photo.jpg']} alt="" />
+                    <img className="home-photo-part" src="https://www.dropbox.com/s/8o7ej4kleborfns/home-photo.jpg?raw=1" alt="" />
 
                     <div className="slogan-part">
                         <div className="container">

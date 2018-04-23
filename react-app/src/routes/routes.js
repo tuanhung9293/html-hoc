@@ -17,7 +17,7 @@ import {
       routes: [
         {
             path: '/',
-            root: true
+            root: '/home'
         },
         {
           component: HomePage,

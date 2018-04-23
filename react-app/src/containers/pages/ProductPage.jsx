@@ -3,11 +3,21 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as Actions from '../../actions/';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 import { MasterLayout } from '../../components/layouts';
-import { ContactMe } from '../../components/elements';
+import { ContactMe, CarouselCustom } from '../../components/elements';
+
+const importAll = (r) => {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+}
+
+const images = importAll(require.context('../../assets/images/home-page', false, /\.(png|jpe?g|svg)$/));
 
 class ProductPage extends Component {
+   
 	render() {
 		return (
 			<MasterLayout active='product'>
@@ -70,21 +80,9 @@ class ProductPage extends Component {
 								</div>
 							</div>
 							<div className="col-9 right-part">
-								<div className="photo-slider">
-									<div className="w3-content w3-display-container">
-										<img className="mySlides" src="images/home-page/projects/benh-vien.jpg"/>
-										<img className="mySlides" src="images/home-page/projects/san-bay.jpg"/>
-										<img className="mySlides" src="images/home-page/projects/benh-vien.jpg"/>
-										<img className="mySlides" src="images/home-page/projects/3-03.jpg"/>
-
-										<div className="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle">
-											<span className="w3-badge demo w3-border w3-transparent w3-hover-white"></span>
-											<span className="w3-badge demo w3-border w3-transparent w3-hover-white"></span>
-											<span className="w3-badge demo w3-border w3-transparent w3-hover-white"></span>
-											<span className="w3-badge demo w3-border w3-transparent w3-hover-white"></span>
-										</div>
-									</div>
-								</div>
+                                <div className="photo-slider">
+                                    <CarouselCustom />
+                                </div>
 
 								<div className="prod-galaxy">
 									<div className="title-block">

@@ -3,6 +3,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as Actions from '../../actions/';
 
+import $ from 'jquery';
+
 import { Link } from 'react-router-dom'
 import { MasterLayout } from '../../components/layouts';
 
@@ -16,6 +18,92 @@ const images = importAll(require.context('../../assets/images/home-page', false,
 const iconImg = importAll(require.context('../../assets/images/icon', false, /\.(png|jpe?g|svg)$/));
 
 class HomePage extends Component {
+    componentDidMount = () => {
+        $("#bank-slide #carousel .slide").clone().appendTo("#bank-slide #carousel");
+        $('#bank-slide #next').click(function () {
+            shiftSlide(-1, '#bank-slide #carousel');
+        })
+        $('#bank-slide #prev').click(function () {
+            shiftSlide(1, '#bank-slide #carousel');
+        })
+    
+        // productions slider
+        $("#product-slide #carousel .slide").clone().appendTo("#product-slide #carousel");
+        $('#product-slide #next').click(function () {
+            shiftSlide(-1, '#product-slide #carousel');
+        })
+        $('#product-slide #prev').click(function () {
+            shiftSlide(1, '#product-slide #carousel');
+        })
+
+        autoRunSlide('#product-slide #carousel');
+        autoRunSlide('#bank-slide #carousel');
+
+        fixTable();
+        $(document).on('scroll', fixTable);
+
+        function fixTable() {
+            let topOffset = $(this).scrollTop();
+            if (topOffset > 1975 && topOffset < 6175) {
+                $('#fix-table').removeClass().addClass('position-mid');
+                return;
+            } else {
+                $('#fix-table').removeClass().addClass('position-top');
+            }
+        }
+    
+        function shiftSlide(direction, id) {
+            var carouselProd = $(`${id}`);
+            if (direction === 1) {
+                var slideWidth = $(`${id} .slide:first`).width() + $(`${id} .slide:nth-child(2)`).width() + $(`${id} .slide:nth-child(3)`).width();
+    
+                $(document).off('mouseup')
+                carouselProd.off('mousemove')
+                    .addClass('transition')
+                    .css('transform', 'translateX(' + (slideWidth) + 'px)');
+                setTimeout(function () {
+                    $(`${id} .slide:first`).before($(`${id} .slide:last`));
+                    carouselProd.removeClass('transition')
+                    carouselProd.css('transform', 'translateX(0px)');
+                }, 700)
+    
+            } else if (direction === -1) {
+                var slideWidth = $(`${id} .slide:first`).width();
+    
+                $(document).off('mouseup')
+                carouselProd.off('mousemove')
+                    .addClass('transition')
+                    .css('transform', 'translateX(' + (-slideWidth) + 'px)');
+                setTimeout(function () {
+                    $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                    $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                    $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                    carouselProd.removeClass('transition')
+                    carouselProd.css('transform', 'translateX(0px)');
+                }, 3400)
+            }
+        }
+    
+        function autoRunSlide(id) {
+            var carouselProd = $(`${id}`);
+            setInterval(function () {
+                var slideWidth = $(`${id} .slide:first`).width() + $(`${id} .slide:nth-child(2)`).width() + $(`${id} .slide:nth-child(3)`).width();
+    
+                $(document).off('mouseup')
+                carouselProd.off('mousemove')
+                    .addClass('transition')
+                    .css('transform', 'translateX(' + (-slideWidth) + 'px)');
+                setTimeout(function () {
+                    $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                    $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                    $(`${id} .slide:last`).before($(`${id} .slide:first`));
+                    carouselProd.removeClass('transition')
+                    carouselProd.css('transform', 'translateX(0px)');
+                }, 3400)
+            }, 3450);
+        }
+    }
+
     render() {
         return (
             <MasterLayout active='home'>
@@ -317,8 +405,9 @@ class HomePage extends Component {
                             </div>
                         </div>
 
-                        <div id="fix-table" className="row">
-                            <div className="col-12">
+                        <div id="fix-table">
+                            <div className="row">
+                                 <div className="col-12">
                                 <div className="right-bar">
                                     <div className="title">
                                         hỗ trợ trực tuyến
@@ -354,6 +443,8 @@ class HomePage extends Component {
                                     </div>
                                 </div>
                             </div>
+                            </div>
+                           
                         </div>
                     </div>
 
